@@ -1,0 +1,12 @@
+{
+  "name": "Keells Cinematic",
+  "description": "A world-class cinematic 3D immersive supermarket website for Keells Sri Lanka, featuring hyper-realistic grocery visuals, AI shopping assistant, and Sinhala/English support.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "3D Rendering",
+    "AI Assistant",
+    "Multi-language Support"
+  ]
+}
