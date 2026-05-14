@@ -5,9 +5,9 @@
 <img src="/Keells-Web-3js-screenshots/localhost_3000_%20(10).png" width="30%" alt="image">
 <img src="/Keells-Web-3js-screenshots/localhost_3000_%20(11).png" width="30%" alt="image">
 <img src="/Keells-Web-3js-screenshots/localhost_3000_%20(12).png" width="30%" alt="image">
-<img src="/Keells-Web-3js-screenshots/localhost_3000_%20(2).png" width="30%" alt="image">
-<img src="/Keells-Web-3js-screenshots/localhost_3000_%20(3).png" width="30%" alt="image">
 <img src="/Keells-Web-3js-screenshots/localhost_3000_%20(4).png" width="30%" alt="image">
+<img src="/Keells-Web-3js-screenshots/localhost_3000_%20(3).png" width="30%" alt="image">
+<img src="/Keells-Web-3js-screenshots/localhost_3000_%20(2).png" width="30%" alt="image">
 
 </div>
 <div style="display: flex; justify-content: space-between;">
