@@ -1,6 +1,5 @@
 # 🛒 Keells Super - Cinematic 3D E-commerce Experience
-https://github.com/WICKxDEV/Keells-Web-3js/blob/main/Keells-Web-3js-screenshots/localhost_3000_%20(1).png
-[![Preview]([https://img.shields.io/badge/Owner-WICKxDEV-green?style=for-the-badge&logo=github](https://github.com/WICKxDEV/Keells-Web-3js/blob/main/Keells-Web-3js-screenshots/localhost_3000_%20(1).png))]
+<img src="/Keells-Web-3js-screenshots/localhost_3000_%20(1).png" width="30%" alt="Month View">
 
 [![Owner](https://img.shields.io/badge/Owner-WICKxDEV-green?style=for-the-badge&logo=github)](https://github.com/WICKxDEV)
 
