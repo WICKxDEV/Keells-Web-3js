@@ -10,9 +10,10 @@
 <img src="/Keells-Web-3js-screenshots/localhost_3000_%20(4).png" width="30%" alt="image">
 
 </div>
+<div style="display: flex; justify-content: space-between;">
 <img src="/Keells-Web-3js-screenshots/localhost_3000_%20(1).png" width="30%" alt="image">
 <img src="/Keells-Web-3js-screenshots/localhost_3000_.png" width="30%" alt="image">
-
+</div>
 
 [![Owner](https://img.shields.io/badge/Owner-WICKxDEV-green?style=for-the-badge&logo=github)](https://github.com/WICKxDEV)
 
