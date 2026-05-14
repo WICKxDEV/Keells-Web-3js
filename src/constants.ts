@@ -11,15 +11,11 @@ export const COLORS = {
 };
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: 'Home', labelSi: 'මුල් පිටුව', path: '/' },
-  { label: 'Shop', labelSi: 'වෙළඳසැල', path: '/shop' },
-  { label: 'Deals', labelSi: 'දීමනා', path: '/deals' },
-  { label: 'Fresh Market', labelSi: 'නැවුම් වෙළඳපොළ', path: '/fresh' },
-  { label: 'Recipes', labelSi: 'වට්ටෝරු', path: '/recipes' },
-  { label: 'Loyalty', labelSi: 'ප්‍රසාද ලකුණු', path: '/loyalty' },
-  { label: 'Delivery', labelSi: 'බෙදාහැරීම්', path: '/delivery' },
-  { label: 'Careers', labelSi: 'වෘත්තීන්', path: '/careers' },
-  { label: 'Contact', labelSi: 'සම්බන්ධ වන්න', path: '/contact' },
+  { id: 'home', label: 'Home', labelSi: 'මුල් පිටුව', path: '/' },
+  { id: 'shop', label: 'Shop', labelSi: 'වෙළඳසැල', path: '/shop' },
+  { id: 'fresh', label: 'Fresh Market', labelSi: 'නැවුම් වෙළඳපොළ', path: '/shop?category=Vegetables' },
+  { id: 'loyalty', label: 'Loyalty', labelSi: 'ප්‍රසාද ලකුණු', path: '/loyalty' },
+  { id: 'contact', label: 'Contact', labelSi: 'සම්බන්ධ වන්න', path: '/contact' },
 ];
 
 export const FEATURED_PRODUCTS: Product[] = [
@@ -31,7 +27,9 @@ export const FEATURED_PRODUCTS: Product[] = [
     image: 'https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&q=80',
     category: 'Fruits',
     isFresh: true,
-    rating: 4.8
+    rating: 4.8,
+    stock: 150,
+    unit: 'kg'
   },
   {
     id: '2',
@@ -41,7 +39,9 @@ export const FEATURED_PRODUCTS: Product[] = [
     image: 'https://images.unsplash.com/photo-1587132137056-bfbf0166836e?auto=format&fit=crop&q=80',
     category: 'Fruits',
     isFresh: true,
-    rating: 4.7
+    rating: 4.7,
+    stock: 200,
+    unit: 'kg'
   },
   {
     id: '3',
@@ -51,6 +51,8 @@ export const FEATURED_PRODUCTS: Product[] = [
     image: 'https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?auto=format&fit=crop&q=80',
     category: 'Beverages',
     isFresh: false,
-    rating: 4.9
+    rating: 4.9,
+    stock: 85,
+    unit: 'pack'
   }
 ];

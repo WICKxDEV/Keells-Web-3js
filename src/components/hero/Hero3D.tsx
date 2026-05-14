@@ -2,8 +2,10 @@ import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Float, MeshDistortMaterial, Sphere, OrbitControls, Environment, ContactShadows } from '@react-three/drei';
 import { motion } from 'motion/react';
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ShoppingBag, ArrowRight } from 'lucide-react';
+import { useStore } from '../../lib/store';
 
 function BrandCore() {
   return (
@@ -44,6 +46,8 @@ function BrandCore() {
 
 export default function Hero3D() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const { setVirtualHubOpen } = useStore();
 
   return (
     <section id="hero" className="relative h-screen min-h-[800px] w-full bg-[#FCFDFB] flex items-center overflow-hidden px-6 lg:px-10">
@@ -68,7 +72,7 @@ export default function Hero3D() {
               <span className="w-2.5 h-2.5 bg-primary rounded-full block"></span>
               <span className="absolute inset-0 w-2.5 h-2.5 bg-primary rounded-full animate-ping"></span>
             </div>
-            <span className="text-[11px] font-black uppercase tracking-[0.2em]">{t('welcome')}</span>
+            <span className="text-[11px] font-black uppercase tracking-[0.2em]">{t('welcome_keells')}</span>
           </motion.div>
           
           <h1 className="text-[75px] md:text-[110px] lg:text-[140px] leading-[0.8] font-black tracking-tighter text-dark mb-10 uppercase">
@@ -78,30 +82,32 @@ export default function Hero3D() {
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl font-light text-muted max-w-xl mb-14 leading-relaxed">
+          <p className="text-xl md:text-2xl font-light text-gray-500 max-w-xl mb-14 leading-relaxed">
             {t('hero_subtitle')}
             <span className="block mt-6 font-black text-primary italic text-lg opacity-90 tracking-tight">
-              ශ්‍රී ලංකාවේ අංක 1 සුපිරි වෙළඳසැල් අත්දැකීම.
+              {t('sri_lanka_no1')}
             </span>
           </p>
 
           <div className="flex flex-wrap gap-6">
             <motion.button 
+              onClick={() => navigate('/shop')}
               whileHover={{ scale: 1.05, y: -5 }}
               whileTap={{ scale: 0.98 }}
-              className="group px-14 py-7 bg-primary text-white rounded-[24px] font-black text-xs tracking-[0.3em] uppercase shadow-[0_25px_60px_rgba(0,132,68,0.3)] transition-all flex items-center gap-4"
+              className="group px-14 py-7 bg-primary text-white rounded-[24px] font-black text-xs tracking-[0.3em] uppercase shadow-[0_25px_60px_rgba(0,132,68,0.3)] transition-all flex items-center gap-4 cursor-pointer"
             >
               <ShoppingBag size={18} strokeWidth={3} className="group-hover:rotate-12 transition-transform" />
               {t('shop_now')}
             </motion.button>
-            <motion.button 
+            <motion.a 
+              onClick={() => setVirtualHubOpen(true)}
               whileHover={{ scale: 1.05, backgroundColor: '#fdfdfd' }}
               whileTap={{ scale: 0.98 }}
-              className="px-14 py-7 bg-white border border-gray-100 text-dark rounded-[24px] font-black text-xs tracking-[0.3em] uppercase flex items-center gap-4 shadow-2xl transition-all"
+              className="px-14 py-7 bg-white border border-gray-100 text-dark rounded-[24px] font-black text-xs tracking-[0.3em] uppercase flex items-center gap-4 shadow-2xl transition-all cursor-pointer"
             >
-              Virtual Hub
+              {t('virtual_hub')}
               <ArrowRight size={18} strokeWidth={3} />
-            </motion.button>
+            </motion.a>
           </div>
         </motion.div>
       </div>
@@ -137,12 +143,12 @@ export default function Hero3D() {
       >
         <div className="flex gap-10">
           <div className="flex flex-col">
-            <span className="text-[10px] font-black text-primary uppercase tracking-[0.3em] mb-2 opacity-60 italic">Online Reach</span>
+            <span className="text-[10px] font-black text-primary uppercase tracking-[0.3em] mb-2 opacity-60 italic">{t('online_reach')}</span>
             <span className="text-3xl font-black text-dark tracking-tighter">Col 1-15 <span className="text-secondary text-sm">active</span></span>
           </div>
           <div className="h-full w-[1px] bg-gray-200"></div>
           <div className="flex flex-col">
-            <span className="text-[10px] font-black text-primary uppercase tracking-[0.3em] mb-2 opacity-60 italic">Quality Index</span>
+            <span className="text-[10px] font-black text-primary uppercase tracking-[0.3em] mb-2 opacity-60 italic">{t('quality_index')}</span>
             <span className="text-3xl font-black text-dark tracking-tighter">99.2% <span className="text-accent text-sm">fresh</span></span>
           </div>
         </div>

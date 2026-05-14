@@ -10,6 +10,9 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-[#FCFDFB] text-[#1A2E1A];
   }

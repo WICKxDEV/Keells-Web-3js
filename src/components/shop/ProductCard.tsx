@@ -4,6 +4,7 @@ import { Star, ShoppingCart, Heart } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Product } from '../../types';
 import confetti from 'canvas-confetti';
+import { useStore } from '../../lib/store';
 
 interface ProductCardProps {
   product: Product;
@@ -12,8 +13,10 @@ interface ProductCardProps {
 export default function ProductCard({ product }: ProductCardProps) {
   const { i18n } = useTranslation();
   const isSi = i18n.language === 'si';
+  const { addItem } = useStore();
 
   const handleAddToCart = () => {
+    addItem(product);
     confetti({
       particleCount: 150,
       spread: 70,
