@@ -95,7 +95,6 @@ Detailed documentation for specific modules:
 This project was envisioned and developed by **Isuru Wickramasinghe**.
 
 - **GitHub:** [WICKxDEV](https://github.com/WICKxDEV)
-- **Platform:** Developed using **Google AI Studio Build**
 
 ---
 
